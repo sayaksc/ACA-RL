@@ -12,17 +12,12 @@ def FileNaming(names):
         else:
             D[names[i]]=0
         ans.append(newstring(names[i],D[names[i]]))
-        # print ans[i],' ',
         if D[names[i]]!=0:
             if (ans[i] in D.keys()):
                 D[ans[i]]+=1
             else:
                 D[ans[i]]=0
-    # print "\n",D
     return ans
-
-
 #main
 names=input()
-#names=x.split(" ")
 print FileNaming(names);
